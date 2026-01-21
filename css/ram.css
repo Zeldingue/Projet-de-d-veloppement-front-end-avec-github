@@ -1,28 +1,44 @@
-.ram-header { text-align: center; margin-bottom: 50px; }
+.ram-container {
+    padding: 50px 0;
+}
 
-.ram-stack {
+.explanation-box {
+    border: 1px solid var(--accent-teal);
+    padding: 40px;
+    margin-bottom: 60px;
+    background: rgba(69, 162, 158, 0.05);
+    border-radius: 10px;
+}
+
+.ram-comparison {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 40px;
 }
 
-.ram-item {
-    background: var(--bg-card);
-    padding: 30px;
-    border-radius: 10px;
-    border-left: 5px solid var(--accent-teal);
+.ram-block {
     display: flex;
     align-items: center;
-    gap: 30px;
+    background: var(--bg-card);
+    padding: 30px;
+    border-radius: 12px;
+    border-right: 4px solid transparent;
+    transition: border-right 0.3s ease;
 }
 
-.ram-item.active {
-    border-left-color: var(--accent-cyan);
-    box-shadow: 0 0 15px rgba(102, 252, 241, 0.1);
+.ram-block:hover {
+    border-right: 4px solid var(--accent-cyan);
 }
 
-.version {
-    font-size: 1.5rem;
-    font-weight: bold;
+.ram-label {
+    font-size: 2.5rem;
+    font-weight: 800;
     color: var(--accent-cyan);
+    min-width: 150px;
+    letter-spacing: 2px;
+}
+
+.ram-details {
+    padding-left: 30px;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
 }

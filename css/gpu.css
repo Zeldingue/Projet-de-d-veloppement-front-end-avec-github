@@ -1,33 +1,55 @@
-.page-title {
-    text-align: center;
-    margin-bottom: 60px;
+.gpu-section {
+    padding: 60px 0;
+}
+
+.rivalry-text {
+    background: var(--bg-card);
+    padding: 30px;
+    border-radius: 15px;
+    border-left: 4px solid var(--accent-cyan);
+    margin-bottom: 50px;
+}
+
+.rivalry-text h2 {
     color: var(--accent-cyan);
+    margin-bottom: 15px;
 }
 
 .gpu-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Adaptatif [cite: 25] */
-    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
 }
 
-.gpu-brand {
+.gpu-card {
     background: var(--bg-card);
     padding: 40px;
     border-radius: 20px;
-    position: relative;
-    transition: 0.3s;
+    transition: all 0.4s ease;
+    border: 1px solid rgba(102, 252, 241, 0.1);
 }
 
-/* Couleurs spécifiques aux marques [cite: 42] */
-.nvidia { border-top: 5px solid #76b900; }
-.amd { border-top: 5px solid #ed1c24; }
+.gpu-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
 
-.feature-tag {
-    display: inline-block;
-    padding: 5px 15px;
-    background: rgba(102, 252, 241, 0.1);
-    color: var(--accent-cyan);
-    border-radius: 20px;
-    font-size: 0.8rem;
-    margin: 15px 0;
+.gpu-card.nvidia { border-top: 5px solid #76b900; }
+.gpu-card.amd { border-top: 5px solid #ed1c24; }
+
+.gpu-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.tech-list {
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.tech-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    color: var(--accent-teal);
 }

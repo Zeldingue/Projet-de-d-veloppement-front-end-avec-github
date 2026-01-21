@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/ram.css">
 </head>
-<header>
+<body>
+    <header>
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
@@ -21,23 +22,40 @@
             </ul>
         </nav>
     </header>
-<body>
-    <main class="container py-5">
-        <section class="ram-header">
-            <h1>MÉMOIRE VIVE (RAM)</h1>
-            <p>La vitesse de votre plan de travail numérique.</p>
+
+    <main class="container ram-container">
+        <section class="hero-sub">
+            <h1>La Mémoire Vive (RAM)</h1>
+            <p>L'espace de travail éphémère de vos logiciels.</p>
         </section>
 
-        <div class="ram-stack">
-            <div class="ram-item">
-                <span class="version">DDR4</span>
-                <p>Standard actuel fiable, idéal pour les budgets maîtrisés.</p>
+        <section class="explanation-box">
+            <h2>Pourquoi la RAM est-elle cruciale ?</h2>
+            <p>La RAM stocke temporairement les données dont le processeur a besoin immédiatement. Plus vous avez de RAM, plus vous pouvez ouvrir d'onglets de navigateur ou de logiciels lourds sans que le PC ne ralentisse. Dès que vous éteignez votre ordinateur, cette mémoire est vidée.</p>
+
+            <h2>DDR4 vs DDR5 : Le Changement d'Ére</h2>
+            <p>Nous sommes en pleine transition technologique. La <strong>DDR4</strong> est le standard fiable et économique des dernières années. Cependant, la <strong>DDR5</strong> offre des vitesses de transfert doublées et une meilleure gestion de l'énergie. Passer à la DDR5, c'est s'assurer que le "plan de travail" du CPU ne sera jamais encombré.</p>
+        </section>
+
+        <div class="ram-comparison">
+            <div class="ram-block">
+                <div class="ram-label">DDR4</div>
+                <div class="ram-details">
+                    <p>Standard mature, idéal pour les configurations bureautiques et gaming à budget maîtrisé. Fréquences courantes : 3200 - 3600 MHz.</p>
+                </div>
             </div>
-            <div class="ram-item active">
-                <span class="version">DDR5</span>
-                <p>Le futur du gaming : fréquences doublées et meilleure efficacité énergétique.</p>
+
+            <div class="ram-block">
+                <div class="ram-label">DDR5</div>
+                <div class="ram-details">
+                    <p>Le nouveau standard haute performance. Indispensable pour le montage vidéo 4K et le gaming de nouvelle génération. Fréquences : 4800 - 8000+ MHz.</p>
+                </div>
             </div>
         </div>
     </main>
+
+    <footer class="container" style="text-align: center; padding: 40px 0; border-top: 1px solid var(--bg-card); margin-top: 50px;">
+        <p>&copy; BTS SIO 2025-2027. Tous droits réservés.</p>
+    </footer>
 </body>
 </html>
