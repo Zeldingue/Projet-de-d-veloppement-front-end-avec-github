@@ -1,0 +1,44 @@
+.ram-container {
+    padding: 50px 0;
+}
+
+.explanation-box {
+    border: 1px solid var(--accent-teal);
+    padding: 40px;
+    margin-bottom: 60px;
+    background: rgba(69, 162, 158, 0.05);
+    border-radius: 10px;
+}
+
+.ram-comparison {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.ram-block {
+    display: flex;
+    align-items: center;
+    background: var(--bg-card);
+    padding: 30px;
+    border-radius: 12px;
+    border-right: 4px solid transparent;
+    transition: border-right 0.3s ease;
+}
+
+.ram-block:hover {
+    border-right: 4px solid var(--accent-cyan);
+}
+
+.ram-label {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--accent-cyan);
+    min-width: 150px;
+    letter-spacing: 2px;
+}
+
+.ram-details {
+    padding-left: 30px;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+}

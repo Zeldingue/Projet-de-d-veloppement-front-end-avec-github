@@ -1,0 +1,44 @@
+/* Espacement de la section de texte explicatif */
+.content-text {
+    margin: 40px 0;
+    padding: 30px;
+    background: rgba(31, 40, 51, 0.5);
+    border-radius: 12px;
+    border-left: 4px solid var(--accent-cyan);
+}
+
+/* Style des titres dans le texte */
+.content-text h2 {
+    color: var(--accent-cyan);
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+/* Style des paragraphes pour un confort de lecture optimal */
+.content-text p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: var(--text-main);
+}
+
+/* Mise en forme du tableau de rivalité */
+.comp-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background-color: var(--bg-card);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.comp-table th, .comp-table td {
+    padding: 20px;
+    text-align: left;
+    border-bottom: 1px solid rgba(102, 252, 241, 0.1);
+}
+
+.comp-table th {
+    background-color: var(--accent-teal);
+    color: var(--bg-dark);
+    text-transform: uppercase;
+}
