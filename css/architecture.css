@@ -1,0 +1,61 @@
+/* Style spécifique pour le Hero de la page Architecture */
+.hero-arch {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(rgba(11, 12, 16, 0.85), rgba(11, 12, 16, 0.85)), 
+                url('https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=2070');
+    background-size: cover;
+    background-position: center;
+    border-bottom: 2px solid var(--accent-cyan);
+}
+
+/* Titre de section réutilisable */
+.section-title {
+    text-align: center;
+    margin: 40px 0;
+    color: var(--accent-cyan);
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+/* Grille pour les cartes d'analogie */
+.analogy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+/* Style des cartes reprenant votre "Cyber-Style" */
+.analogy-card {
+    background-color: var(--bg-card);
+    padding: 30px;
+    border-radius: 10px;
+    border-left: 5px solid var(--accent-cyan); /* Bordure latérale néon */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Effet interactif au survol */
+.analogy-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(102, 252, 241, 0.2);
+}
+
+/* Style des icônes/emojis */
+.icon-box {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.analogy-card h3 {
+    color: var(--accent-cyan);
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.analogy-card p {
+    font-size: 1rem;
+    color: var(--text-main);
+    line-height: 1.5;
+}
