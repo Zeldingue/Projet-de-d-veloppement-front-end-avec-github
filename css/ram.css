@@ -42,3 +42,13 @@
     padding-left: 30px;
     border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
+
+.hero-ram {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(rgba(11, 12, 16, 0.85), rgba(11, 12, 16, 0.85)),
+        url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnsZ9enCKnU8eiZ7dcz2PFk8byEVdbiui4oK5PvV0dwDdMHgH3A-sGXISIATRI');
+    background-size: cover;
+    background-position: center;
+    border-bottom: 2px solid var(--accent-cyan);
+}

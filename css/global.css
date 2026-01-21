@@ -12,6 +12,8 @@ body {
     font-family: 'Inter', sans-serif;
     margin: 0;
     line-height: 1.6;
+    scroll-behavior: smooth;
+;
 }
 
 header {
@@ -65,3 +67,5 @@ nav ul li a:hover {
 .go-to:hover {
     background-color: var(--accent-teal);
 }
+
+

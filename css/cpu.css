@@ -1,7 +1,7 @@
 /* Espacement de la section de texte explicatif */
 .content-text {
     margin: 40px 0;
-    padding: 30px;
+    padding: 0px;
     background: rgba(31, 40, 51, 0.5);
     border-radius: 12px;
     border-left: 4px solid var(--accent-cyan);
@@ -41,4 +41,14 @@
     background-color: var(--accent-teal);
     color: var(--bg-dark);
     text-transform: uppercase;
+}
+
+.hero-cpu {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(rgba(11, 12, 16, 0.85), rgba(11, 12, 16, 0.85)), 
+                url('https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_oSZabI_JGMq7oxyi6mEoXyOHvjUnTXnCcHBc--kIiVm5nMpbKbLzF8yMvUaR');
+    background-size: cover;
+    background-position: center;
+    border-bottom: 2px solid var(--accent-cyan);
 }
