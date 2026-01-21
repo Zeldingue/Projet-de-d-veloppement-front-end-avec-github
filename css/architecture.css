@@ -59,3 +59,8 @@
     color: var(--text-main);
     line-height: 1.5;
 }
+
+.icon-box img {
+    width: 60px;
+    height: 60px;
+}
