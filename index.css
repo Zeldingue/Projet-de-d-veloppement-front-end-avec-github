@@ -14,7 +14,7 @@ body {
     line-height: 1.6;
 }
 
-header {
+header, footer {
     background-color: rgba(31, 40, 51, 0.95);
     border-bottom: 2px solid var(--accent-cyan);
     padding: 1rem 0;
