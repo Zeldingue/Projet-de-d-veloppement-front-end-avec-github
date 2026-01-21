@@ -1,0 +1,35 @@
+/* Style spécifique pour la page CPU */
+.cpu-intro {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.cpu-comparison {
+    margin-top: 30px;
+    background: var(--bg-card); /* Utilise la variable du global [cite: 39] */
+    border-radius: 15px;
+    padding: 20px;
+    border: 1px solid var(--accent-teal);
+    overflow-x: auto; /* Permet le scroll sur mobile [cite: 25] */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Supprime les espaces entre les bordures */
+}
+
+th, td {
+    padding: 20px;
+    text-align: left;
+    border-bottom: 1px solid rgba(102, 252, 241, 0.1);
+}
+
+th {
+    color: var(--accent-cyan);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+tr:hover {
+    background-color: rgba(69, 162, 158, 0.05); /* Effet discret au survol */
+}

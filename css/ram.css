@@ -1,0 +1,28 @@
+.ram-header { text-align: center; margin-bottom: 50px; }
+
+.ram-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ram-item {
+    background: var(--bg-card);
+    padding: 30px;
+    border-radius: 10px;
+    border-left: 5px solid var(--accent-teal);
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.ram-item.active {
+    border-left-color: var(--accent-cyan);
+    box-shadow: 0 0 15px rgba(102, 252, 241, 0.1);
+}
+
+.version {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--accent-cyan);
+}

@@ -1,0 +1,33 @@
+.page-title {
+    text-align: center;
+    margin-bottom: 60px;
+    color: var(--accent-cyan);
+}
+
+.gpu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Adaptatif [cite: 25] */
+    gap: 40px;
+}
+
+.gpu-brand {
+    background: var(--bg-card);
+    padding: 40px;
+    border-radius: 20px;
+    position: relative;
+    transition: 0.3s;
+}
+
+/* Couleurs spécifiques aux marques [cite: 42] */
+.nvidia { border-top: 5px solid #76b900; }
+.amd { border-top: 5px solid #ed1c24; }
+
+.feature-tag {
+    display: inline-block;
+    padding: 5px 15px;
+    background: rgba(102, 252, 241, 0.1);
+    color: var(--accent-cyan);
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin: 15px 0;
+}
