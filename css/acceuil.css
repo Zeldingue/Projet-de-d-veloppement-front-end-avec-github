@@ -1,0 +1,33 @@
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: linear-gradient(rgba(11, 12, 16, 0.7), rgba(11, 12, 16, 0.7)), 
+                url('https://images.unsplash.com/photo-1540747913346-19e3adbd174f?q=80&w=2000');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    color: var(--accent-cyan);
+    margin-bottom: 20px;
+}
+
+.intro-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.card {
+    background-color: var(--bg-card);
+    padding: 30px;
+    border-radius: 12px;
+    border-top: 3px solid var(--accent-cyan);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
