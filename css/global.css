@@ -56,6 +56,12 @@ nav ul li a:hover {
 
 }
 
+nav ul li a.active {
+    color: var(--accent-teal);
+    border-bottom: 2px solid var(--accent-teal);
+    padding-bottom: 5px;
+}
+
 .go-to{
     margin-top: 15px;
     padding: 10px 20px;
