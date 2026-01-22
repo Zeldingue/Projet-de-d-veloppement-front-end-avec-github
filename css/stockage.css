@@ -1,39 +1,30 @@
-.storage-section { padding-top: 0; }
+/* --- Styles Spécifiques Stockage --- */
 
 .hero-storage {
     text-align: center;
     padding: 100px 20px;
     background: linear-gradient(rgba(11, 12, 16, 0.8), rgba(11, 12, 16, 0.8)), 
-                url('http://googleusercontent.com/image_collection/image_retrieval/10996947449689409229_0');
+                url('https://images.unsplash.com/photo-1597852074816-d933c4d2b988?q=80&w=2000');
     background-size: cover;
     background-position: center;
     border-bottom: 2px solid var(--accent-cyan);
 }
 
-.explanation-box {
-    background: var(--bg-card);
-    padding: 35px;
-    border-radius: 15px;
-    border-left: 4px solid var(--accent-cyan);
-    margin: 50px 0;
-}
-
-.storage-comparison { display: flex; flex-direction: column; gap: 30px; }
-
-.storage-block {
-    display: flex;
-    align-items: center;
-    background: var(--bg-card);
-    padding: 25px;
-    border-radius: 10px;
-    transition: 0.3s;
-}
-
-.storage-block.active { border-right: 4px solid var(--accent-cyan); }
-
-.storage-label {
-    font-size: 2rem;
-    font-weight: bold;
+.hero-storage h1 {
     color: var(--accent-cyan);
-    min-width: 120px;
+    font-size: 3rem;
+    margin: 0;
+}
+
+/* On réutilise les styles des blocs de comparaison pour la cohérence */
+.ram-block em {
+    display: block;
+    margin-top: 10px;
+    color: var(--accent-teal);
+    font-style: normal;
+    font-weight: bold;
+}
+
+.ram-block strong {
+    color: var(--accent-cyan);
 }

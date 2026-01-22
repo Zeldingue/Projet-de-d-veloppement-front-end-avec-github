@@ -1,0 +1,51 @@
+/* --- Styles Spécifiques Carte Mère --- */
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero-mb {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(rgba(11, 12, 16, 0.8), rgba(11, 12, 16, 0.8)), 
+                url('https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2000');
+    background-size: cover;
+    background-position: center;
+    border-bottom: 2px solid var(--accent-cyan);
+}
+
+.hero-mb h1 {
+    color: var(--accent-cyan);
+    font-size: 3rem;
+    margin: 0;
+}
+
+.section-title {
+    color: var(--accent-cyan);
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.ram-details h3 {
+    color: var(--accent-cyan);
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.navigation-footer {
+    text-align: center;
+    margin: 50px 0 100px 0;
+}
+
+/* Ajustement pour l'image de la carte mère */
+.mb-diagram {
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    margin: 0 auto 40px auto;
+    border-radius: 10px;
+    border: 1px solid var(--accent-teal);
+}
