@@ -1,6 +1,7 @@
-/* --- SECTION PRINCIPALE --- */
-.storage-section {
-    padding-top: 0; /* Supprime l'espace noir en haut pour coller au header */
+/* --- STRUCTURE GENERALE --- */
+main {
+    padding-top: 0;
+    /* Supprime l'espace noir en haut pour coller au header */
     padding-bottom: 60px;
 }
 
@@ -8,95 +9,73 @@
 .hero-storage {
     text-align: center;
     padding: 100px 20px;
-    /* Dégradé sombre pour la lisibilité sur l'image haute résolution */
-    background: linear-gradient(rgba(11, 12, 16, 0.8), rgba(11, 12, 16, 0.8)), 
-                url('http://googleusercontent.com/image_collection/image_retrieval/10996947449689409229_0');
+    /* Dégradé sombre pour garantir la lisibilité du texte blanc */
+    background: linear-gradient(rgba(11, 12, 16, 0.8), rgba(11, 12, 16, 0.8)),
+        url('http://googleusercontent.com/image_collection/image_retrieval/10996947449689409229_0');
     background-size: cover;
     background-position: center;
     border-bottom: 2px solid var(--accent-cyan);
     width: 100%;
+    margin-bottom: 40px;
 }
 
 .hero-storage h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: var(--accent-cyan);
-    margin-bottom: 15px;
     text-transform: uppercase;
-}
-
-/* --- BLOC EXPLICATIF (RÔLE ET RIVALITÉ) --- */
-.explanation-box {
-    background: var(--bg-card);
-    padding: 35px;
-    border-radius: 15px;
-    border-left: 4px solid var(--accent-cyan); /* Rappel visuel de la charte */
-    margin: 50px 0;
-}
-
-.explanation-box h2 {
-    color: var(--accent-cyan);
-    margin-bottom: 20px;
-}
-
-.explanation-box p {
-    margin-bottom: 15px;
-    line-height: 1.7;
-    color: var(--text-main);
-}
-
-/* --- COMPARAISON EN PILE (STACK) --- */
-.storage-comparison {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin-bottom: 50px;
-}
-
-.storage-block {
-    display: flex;
-    align-items: center;
-    background: var(--bg-card);
-    padding: 30px;
-    border-radius: 12px;
-    border-right: 4px solid transparent;
-    transition: all 0.3s ease; /* Animation fluide au survol */
-}
-
-/* Effet pour la technologie recommandée/active */
-.storage-block.active {
-    border-right: 4px solid var(--accent-cyan);
-    box-shadow: 0 0 15px rgba(102, 252, 241, 0.1);
-}
-
-.storage-block:hover {
-    transform: translateX(10px);
-    background: rgba(31, 40, 51, 0.8);
-}
-
-.storage-label {
-    font-size: 2.2rem;
-    font-weight: bold;
-    color: var(--accent-cyan);
-    min-width: 150px;
     letter-spacing: 2px;
 }
 
-.storage-details {
-    padding-left: 30px;
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.storage-details p {
-    font-size: 1rem;
-    color: var(--text-main);
-    line-height: 1.5;
-}
-
-/* --- ANALOGY CARDS (Optionnel si tu gardes ta structure de base) --- */
-.analogy-card {
+/* --- BLOCS DE TEXTE (CONTENT-TEXT) --- */
+.content-text {
     background: var(--bg-card);
-    padding: 20px;
-    border-radius: 8px;
+    padding: 35px;
+    border-radius: 15px;
     border-left: 4px solid var(--accent-cyan);
+    margin: 40px 0;
+    line-height: 1.7;
+}
+
+.content-text h2 {
+    color: var(--accent-cyan);
     margin-bottom: 20px;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+.content-text h3 {
+    color: var(--accent-teal);
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.content-text p {
+    color: var(--text-main);
+    margin-bottom: 15px;
+}
+
+/* --- CARTES D'ANALOGIE (ANALOGY-CARD) --- */
+.analogy-card {
+    background: rgba(102, 252, 241, 0.05);
+    /* Fond très léger pour se distinguer */
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid rgba(102, 252, 241, 0.2);
+    margin: 20px 0;
+}
+
+.analogy-card h2 {
+    color: var(--accent-cyan);
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+/* --- PIED DE PAGE --- */
+footer {
+    text-align: center;
+    padding: 40px 0;
+    border-top: 1px solid var(--bg-card);
+    color: var(--text-main);
+    margin-top: 50px;
 }
