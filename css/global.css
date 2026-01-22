@@ -13,7 +13,11 @@ body {
     margin: 0;
     line-height: 1.6;
     scroll-behavior: smooth;
-;
+
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 header {

@@ -1,15 +1,23 @@
-.cooling-section { padding-top: 0; }
+.cooling-section {
+    padding-top: 0;
+}
 
 .hero-cooling {
     text-align: center;
     padding: 100px 20px;
-    background: linear-gradient(rgba(11, 12, 16, 0.8), rgba(11, 12, 16, 0.8)), 
-                url('https://images.unsplash.com/photo-1587202372775-e229f172b9d7?q=80&w=2000');
+    background: linear-gradient(rgba(11, 12, 16, 0.8), rgba(11, 12, 16, 0.8)),
+        url('https://images.unsplash.com/photo-1587202372775-e229f172b9d7?q=80&w=2000');
     background-size: cover;
     background-position: center;
     border-bottom: 2px solid var(--accent-cyan);
 }
-.cooling-grid { display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 50px; }
+
+.cooling-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
 
 .cool-card {
     flex: 1;
@@ -20,4 +28,23 @@
     border-bottom: 4px solid var(--accent-teal);
 }
 
-.cool-card.water { border-bottom-color: var(--accent-cyan); }
+.cool-card.water {
+    border-bottom-color: var(--accent-cyan);
+}
+
+/* Espacement de la section de texte explicatif */
+.content-text {
+    margin: 40px 0;
+    padding: 0.5px;
+    padding-left:30px;
+    background: rgba(31, 40, 51, 0.5);
+    border-radius: 12px;
+    border-left: 4px solid var(--accent-cyan);
+}
+
+/* Style des titres dans le texte */
+.content-text h2 {
+    color: var(--accent-cyan);
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
