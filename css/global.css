@@ -73,3 +73,10 @@ nav ul li a:hover {
 }
 
 
+footer {
+    text-align: center;
+    padding: 40px 0;
+    border-top: 1px solid var(--bg-card);
+    color: var(--text-main);
+    margin-top: 50px;
+}
