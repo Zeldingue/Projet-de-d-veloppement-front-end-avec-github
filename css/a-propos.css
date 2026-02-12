@@ -1,3 +1,4 @@
+/* --- TON CODE EXISTANT --- */
 body{
     background-color: black;
 }
@@ -23,16 +24,12 @@ h1 {
     border-radius: 15px; 
     border-left: 4px solid var(--accent-cyan); 
     margin: 50px 0; 
-
 }
 
 p{
-    font-size: 1rem;  /* Pour une taille confortable */
-  line-height: 1.7;   /* Permet d'aèrer le texte  */  
-  
+    font-size: 1rem; 
+  line-height: 1.7; 
 }
-
-
 
 footer {
     text-align: center;
@@ -40,4 +37,20 @@ footer {
     border-top: 1px solid var(--bg-card);
     color: var(--text-main);
     margin-top: 50px;
+}
+
+/* --- AJOUT RESPONSIVE --- */
+@media (max-width: 768px) {
+    .div1 {
+        padding: 60px 20px;
+    }
+    
+    h1 {
+        font-size: 2.2rem;
+    }
+    
+    .section2 {
+        margin: 20px 0;
+        padding: 20px;
+    }
 }

@@ -1,19 +1,17 @@
-/* --- SECTION PRINCIPALE --- */
+/* --- TON CODE EXISTANT --- */
 .gpu-section {
-    padding-top: 0; /* Supprime l'espace noir en haut pour coller au header */
+    padding-top: 0; 
     padding-bottom: 60px;
 }
 
-/* --- HERO SECTION (IMAGE DE FOND) --- */
 .hero-gpu {
     text-align: center;
     padding: 100px 20px;
-    /* Dégradé sombre pour la lisibilité du texte sur l'image */
     background: linear-gradient(rgba(11, 12, 16, 0.75), rgba(11, 12, 16, 0.75)), 
                 url('https://static.vecteezy.com/system/resources/thumbnails/051/758/857/small_2x/close-up-of-high-performance-graphics-card-with-three-cooling-fans-with-neon-lighting-modern-card-for-gaming-and-advanced-computing-photo.jpg');
     background-size: cover;
     background-position: center;
-    border-bottom: 2px solid var(--accent-cyan); /* Ligne néon de séparation */
+    border-bottom: 2px solid var(--accent-cyan); 
     width: 100%;
 }
 
@@ -23,13 +21,12 @@
     margin-bottom: 15px;
 }
 
-/* --- BLOC DE TEXTE EXPLICATIF (RIVALITÉ) --- */
 .rivalry-text {
     background: var(--bg-card);
     padding: 30px;
-    border-radius: 15px; /* Coins arrondis modernes */
-    border-left: 4px solid var(--accent-cyan); /* Rappel de la charte à gauche */
-    margin: 50px 0; /* Espace équilibré haut/bas */
+    border-radius: 15px; 
+    border-left: 4px solid var(--accent-cyan); 
+    margin: 50px 0; 
 }
 
 .rivalry-text h2 {
@@ -42,10 +39,8 @@
     line-height: 1.7;
 }
 
-/* --- GRILLE DES CARTES GPU --- */
 .gpu-grid {
     display: grid;
-    /* Système de grille adaptatif sans media queries complexes */
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 30px;
 }
@@ -54,23 +49,21 @@
     background: var(--bg-card);
     padding: 40px;
     border-radius: 20px;
-    transition: all 0.4s ease; /* Animation fluide au survol */
+    transition: all 0.4s ease; 
     border: 1px solid rgba(102, 252, 241, 0.1);
 }
 
-/* Effet interactif au survol */
 .gpu-card:hover {
-    transform: translateY(-15px); /* Soulève la carte */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Ombre portée */
+    transform: translateY(-15px); 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); 
 }
 
-/* Couleurs spécifiques aux marques pour marquer la rivalité */
 .gpu-card.nvidia { 
-    border-top: 5px solid #76b900; /* Vert NVIDIA */
+    border-top: 5px solid #76b900; 
 }
 
 .gpu-card.amd { 
-    border-top: 5px solid #ed1c24; /* Rouge AMD */
+    border-top: 5px solid #ed1c24; 
 }
 
 .gpu-card h3 {
@@ -79,20 +72,38 @@
     color: #ffffff;
 }
 
-/* --- LISTE TECHNIQUE DANS LES CARTES --- */
 .tech-list {
     margin-top: 20px;
-    list-style: none; /* Supprime les puces par défaut */
+    list-style: none; 
     padding: 0;
 }
 
 .tech-list li {
     padding: 10px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    color: var(--accent-teal); /* Utilise le turquoise pour les détails */
+    color: var(--accent-teal); 
     font-size: 0.95rem;
 }
 
 .tech-list li:last-child {
     border-bottom: none;
+}
+
+/* --- AJOUT RESPONSIVE --- */
+@media (max-width: 768px) {
+    .hero-gpu {
+        padding: 60px 20px;
+    }
+    
+    .hero-gpu h1 {
+        font-size: 2rem;
+    }
+    
+    .gpu-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .gpu-card {
+        padding: 20px;
+    }
 }

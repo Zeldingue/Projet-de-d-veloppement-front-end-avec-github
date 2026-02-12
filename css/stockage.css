@@ -1,15 +1,12 @@
-/* --- STRUCTURE GENERALE --- */
+/* --- TON CODE EXISTANT --- */
 main {
     padding-top: 0;
-    /* Supprime l'espace noir en haut pour coller au header */
     padding-bottom: 60px;
 }
 
-/* --- HERO SECTION (IMAGE DE FOND) --- */
 .hero-storage {
     text-align: center;
     padding: 100px 20px;
-    /* Dégradé sombre pour garantir la lisibilité du texte blanc */
     background: linear-gradient(rgba(11, 12, 16, 0.8), rgba(11, 12, 16, 0.8)),
         url('https://media.ldlc.com/mkt/ldlc/fr/guides/ssd-hdd/couverture.jpg');
     background-size: cover;
@@ -26,7 +23,6 @@ main {
     letter-spacing: 2px;
 }
 
-/* --- BLOCS DE TEXTE (CONTENT-TEXT) --- */
 .content-text {
     background: var(--bg-card);
     padding: 35px;
@@ -55,10 +51,8 @@ main {
     margin-bottom: 15px;
 }
 
-/* --- CARTES D'ANALOGIE (ANALOGY-CARD) --- */
 .analogy-card {
     background: rgba(102, 252, 241, 0.05);
-    /* Fond très léger pour se distinguer */
     padding: 25px;
     border-radius: 10px;
     border: 1px solid rgba(102, 252, 241, 0.2);
@@ -71,4 +65,17 @@ main {
     margin-bottom: 15px;
 }
 
-/* --- PIED DE PAGE --- */
+/* --- AJOUT RESPONSIVE --- */
+@media (max-width: 768px) {
+    .hero-storage {
+        padding: 60px 20px;
+    }
+    
+    .hero-storage h1 {
+        font-size: 2.2rem;
+    }
+    
+    .content-text {
+        padding: 20px;
+    }
+}

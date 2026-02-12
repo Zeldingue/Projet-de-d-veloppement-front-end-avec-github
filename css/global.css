@@ -1,3 +1,4 @@
+/* --- TON CODE EXISTANT --- */
 :root {
     --bg-dark: #0b0c10;
     --bg-card: #1f2833;
@@ -13,7 +14,6 @@ body {
     margin: 0;
     line-height: 1.6;
     scroll-behavior: smooth;
-
 }
 
 body::-webkit-scrollbar {
@@ -53,7 +53,6 @@ nav ul li a {
 
 nav ul li a:hover {
     color: var(--accent-teal);
-
 }
 
 nav ul li a.active {
@@ -62,7 +61,7 @@ nav ul li a.active {
     padding-bottom: 5px;
 }
 
-.go-to{
+.go-to {
     margin-top: 15px;
     padding: 10px 20px;
     background-color: var(--accent-cyan);
@@ -78,11 +77,21 @@ nav ul li a.active {
     background-color: var(--accent-teal);
 }
 
-
 footer {
     text-align: center;
     padding: 40px 0;
     border-top: 1px solid var(--bg-card);
     color: var(--text-main);
     margin-top: 50px;
+}
+
+/* --- AJOUT RESPONSIVE --- */
+@media (max-width: 768px) {
+    nav ul li {
+        margin: 5px 10px; /* Moins d'espace entre les liens sur mobile */
+    }
+    
+    header {
+        padding: 0.5rem 0;
+    }
 }

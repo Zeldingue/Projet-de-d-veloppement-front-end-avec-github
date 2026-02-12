@@ -1,3 +1,4 @@
+/* --- TON CODE EXISTANT --- */
 .ram-section {
     padding-top: 0;
 }
@@ -50,4 +51,24 @@
 .ram-details {
     padding-left: 30px;
     border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* --- AJOUT RESPONSIVE --- */
+@media (max-width: 600px) {
+    .ram-block {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .ram-label {
+        min-width: auto;
+        margin-bottom: 10px;
+    }
+    
+    .ram-details {
+        padding-left: 0;
+        border-left: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding-top: 15px;
+    }
 }

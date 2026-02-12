@@ -1,14 +1,12 @@
-/* --- STRUCTURE GENERALE --- */
+/* --- TON CODE EXISTANT --- */
 .mobo-section {
-    padding-top: 0; /* Supprime le trait noir en haut */
+    padding-top: 0; 
     padding-bottom: 60px;
 }
 
-/* --- HERO SECTION --- */
 .hero-mobo {
     text-align: center;
     padding: 100px 20px;
-    /* Image haute résolution pour la carte mère */
     background: linear-gradient(rgba(11, 12, 16, 0.8), rgba(11, 12, 16, 0.8)), 
                 url('https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2000');
     background-size: cover;
@@ -24,7 +22,6 @@
     letter-spacing: 3px;
 }
 
-/* --- CONTENU --- */
 .explanation-box {
     background: var(--bg-card);
     padding: 35px;
@@ -39,7 +36,6 @@
     text-transform: uppercase;
 }
 
-/* --- SYSTEME DE PILE (STACK) --- */
 .mobo-stack {
     display: flex;
     flex-direction: column;
@@ -84,3 +80,22 @@
     margin-bottom: 5px;
 }
 
+/* --- AJOUT RESPONSIVE --- */
+@media (max-width: 600px) {
+    .mobo-block {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .mobo-label {
+        min-width: auto;
+        margin-bottom: 10px;
+    }
+    
+    .mobo-details {
+        padding-left: 0;
+        border-left: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding-top: 15px;
+    }
+}

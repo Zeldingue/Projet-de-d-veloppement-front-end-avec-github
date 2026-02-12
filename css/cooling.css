@@ -1,3 +1,4 @@
+/* --- TON CODE EXISTANT --- */
 .cooling-section {
     padding-top: 0;
 }
@@ -32,7 +33,6 @@
     border-bottom-color: var(--accent-cyan);
 }
 
-/* Espacement de la section de texte explicatif */
 .content-text {
     margin: 40px 0;
     padding: 0.5px;
@@ -42,9 +42,23 @@
     border-left: 4px solid var(--accent-cyan);
 }
 
-/* Style des titres dans le texte */
 .content-text h2 {
     color: var(--accent-cyan);
     margin-bottom: 20px;
     font-size: 1.8rem;
+}
+
+/* --- AJOUT RESPONSIVE --- */
+@media (max-width: 768px) {
+    .hero-cooling {
+        padding: 60px 20px;
+    }
+    
+    .cool-card {
+        min-width: 100%; /* Chaque carte prend toute la largeur sur mobile */
+    }
+    
+    .content-text {
+        padding-left: 15px;
+    }
 }
