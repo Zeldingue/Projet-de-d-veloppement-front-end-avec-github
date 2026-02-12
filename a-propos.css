@@ -1,0 +1,43 @@
+body{
+    background-color: black;
+}
+
+h1 {
+    color: var(--accent-cyan);
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.div1{
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(rgba(11, 12, 16, 0.8), rgba(11, 12, 16, 0.8)),
+    url('Assets/keyboard-886462_1920.jpg');
+    background-size: cover;
+    border-bottom: 1px solid var(--accent-teal);
+}
+
+.section2 {
+     background: var(--bg-card);
+    padding: 30px;
+    border-radius: 15px; 
+    border-left: 4px solid var(--accent-cyan); 
+    margin: 50px 0; 
+
+}
+
+p{
+    font-size: 1rem;  /* Pour une taille confortable */
+  line-height: 1.7;   /* Permet d'aèrer le texte  */  
+  
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 40px 0;
+    border-top: 1px solid var(--bg-card);
+    color: var(--text-main);
+    margin-top: 50px;
+}
